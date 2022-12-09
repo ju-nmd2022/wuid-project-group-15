@@ -143,8 +143,19 @@
     background-color: #2e8133;
     text-decoration: none;
 }
-.paywithcard:visited {
+.paywithcardtext,.paywithcardtext:visited,.paywithcard:active,.paywithcard::after {
     color: #FFFFFF;
+}
+.paywithcardtext {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.paywithcardtext {
+    font-size: 15pt;
+    font-weight: bold;
 }
 
 /* ------------------------------------------------ */
