@@ -1,0 +1,450 @@
+/* ------------------------------------------------ */
+/*   cart heading/empty cart message/total price    */
+/* ------------------------------------------------ */
+.cartheading,.emptycart {
+    min-width: 100%;
+    text-align: center;
+    margin-top: 8vh;
+}
+.cartheading {
+    font-weight: bold;
+    font-size: max(2.7vh,18pt);
+}
+.emptycart {
+    font-size: max(2.2vh,14pt);
+}
+.yourtotal {
+    min-width: 100%;
+    text-align: center;
+    margin-top: 2vh;
+    font-size: max(2.7vh,18pt);
+}
+
+/* ------------------------------------------------ */
+/*                    cart item                     */
+/* ------------------------------------------------ */
+.cartitem {
+    background-color: rgb(20, 20, 20);
+    width: max(40vw,500px);
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    contain: content;
+    border-radius: 25px;
+    box-shadow: 5px 5px 25px 0px #00000080;
+    box-shadow: -5px -5px 25px 0px #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    contain: content;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.desktopcartitemtext {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+}
+.desktopcartitemimgbackground {
+    background-color: #FFFFFF;
+    width: 15em;
+    height: 12em;
+    contain: content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.desktopcartitemimg {
+    width: 10em;
+    height: auto;
+    
+}
+.desktopcartitemname,.desktopcartitemdevice,.desktopcartitemmaterial,.desktopcartitemprice,.mobilecartitemname,.mobilecartitemdevice,.mobilecartitemmaterial,.mobilecartitemprice {
+    color: #FFFFFF;
+}
+.desktopcartitemname,.desktopcartitemdevice,.desktopcartitemmaterial {
+    font-size: 1.3em;
+}
+.desktopcartitemdevice,.desktopcartitemmaterial,.mobilecartitemdevice,.mobilecartitemmaterial {
+    padding-top: 0.1em;
+}
+.desktopcartitemname,.mobilecartitemname {  
+    font-weight: bold;
+}
+.desktopcartitemmaterial,.mobilecartitemmaterial {
+    font-weight: lighter;
+}
+.desktopcartitemprice,.mobilecartitemprice {
+    font-weight: lighter;  
+}
+.desktopcartitemprice {
+    position: absolute;
+    bottom: 2.7em;
+}
+.removecartitem {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.quantity {
+    background-color: #FFFFFF;
+    width: min(12vw,150px);
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    border-radius: 25px;
+    contain: content;
+    justify-content: space-around;
+    box-shadow: inset -1px -1px 2px #FFFFFF, inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.plusminus,.quantitynumber {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: min(1em,20px);
+    height: auto;
+}
+.quantitynumber {
+    padding-right: 5px; 
+    padding-left: 5px;
+}
+/* ------------------------------------------------ */
+/*          paybuttons                              */
+/* ------------------------------------------------ */
+.paybuttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.applepay,.paywithcard {
+    width: max(30vw,200px);
+    height: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    contain: content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.applepay {
+    background-color: #000000;
+}
+.applepaylogo {
+    width: 40px;
+    height: auto;
+}
+.paywithcard {
+    background-color: #2e8133;
+    text-decoration: none;
+}
+.paywithcard:visited {
+    color: #FFFFFF;
+}
+
+/* ------------------------------------------------ */
+/*          card information                        */
+/* ------------------------------------------------ */
+.cardinput {
+    background-color: #ffffff;
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+    contain: content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 2em;
+    box-shadow: 5px 5px 25px 0px #00000080;
+    box-shadow: -5px -5px 25px 0px #FFFFFF;
+}
+.cardnumber,.cardholdername,.expirationyear,.expirationmonth,.ccv {
+    height: 40px;
+    border-radius: 25px;
+    position: absolute;
+}
+.cardnumber {
+    width: 88%;
+    top: 40px;
+}
+.cardholdername {
+    width: 60%;
+    top: 120px;
+}
+.expirationyear,.expirationmonth {
+    width: 10%;
+    top: 120px;
+}
+.expirationyear {
+    right: 30px;
+}
+.expirationmonth {
+    right: 110px;
+}
+.ccv {
+    top: 200px;
+}
+.savecard {
+    position: absolute;
+    top: 215px;
+    left: 190px;
+}
+.cardtext1,.cardtext2,.cardtext3,.cardtext4,.cardtext5 {
+    position: absolute;
+}
+.cardtext1 {
+    top: 20px;
+}
+.cardtext2 {
+    top: 100px;
+}
+.cardtext3 {
+    top: 100px;
+    left: 390px;
+}
+.cardtext4 {
+    top: 180px;
+}
+.cardtext5 {
+    top: 213px;
+    left: 215px;
+}
+.submitcardinformation {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 280px;
+    border-radius: 25px;
+}
+.paytext {
+    font-size: 15pt;
+    font-weight: bold;
+}
+.buttonlink {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ------------------------------------------------ */
+/*          order confirmation                      */
+/* ------------------------------------------------ */
+.orderconfirmation {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    width: max(50vw,220px);
+    height: auto;
+    padding: 2em;
+    margin: auto;
+    display: none;
+    margin-bottom: 10vh;
+}
+
+
+/* changing look of card input card */
+@media screen and (max-width: 620px) {
+/* ------------------------------------------------ */
+/*          card information                        */
+/* ------------------------------------------------ */
+.cardinput {
+    width: 210px;
+    height: 500px;
+}
+.cardnumber {
+    width: 200px;
+    top: 40px;
+}
+.cardholdername {
+    width: 200px;
+    top: 120px;
+}
+.expirationyear,.expirationmonth {
+    width: 60px;
+    top: 200px;
+}
+.expirationyear {
+    right: inherit;
+}
+.expirationmonth {
+    right: 90px;
+}
+.ccv {
+    top: 280px;
+}
+.savecard {
+    top: 360px;
+    left: inherit;
+}
+.cardtext1 {
+    top: 20px;
+}
+.cardtext2 {
+    top: 100px;
+}
+.cardtext3 {
+    top: 180px;
+    left: inherit;
+}
+.cardtext4 {
+    top: 260px;
+}
+.cardtext5 {
+    top: 360px;
+    left: 55px;
+    font-size: 9pt;
+}
+.submitcardinformation {
+    top: 400px;
+}
+}
+
+
+/* implementing mobile cart item */
+@media screen and (max-width: 575px) {
+/* ------------------------------------------------ */
+/*            mobile  cart item                     */
+/* ------------------------------------------------ */
+.cartitem {
+    background-color: rgb(20, 20, 20);
+    width: 275px;
+    height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    contain: content;
+    border-radius: 25px;
+    box-shadow: 5px 5px 25px 0px #00000080;
+    box-shadow: -5px -5px 25px 0px #FFFFFF;
+    display: flex;
+    flex-direction: row;
+}
+.desktopcartitemtext {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    contain: content;
+}
+.desktopcartitemimgbackground {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 50%;
+    contain: content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.desktopcartitemimg {
+    width: 10em;
+    height: auto;
+}
+.desktopcartitemprice {
+    font-weight: lighter;
+    position: absolute;
+    bottom: 5em;
+}
+.removecartitem {
+    position: absolute;
+    top: 11em;
+    right: 1em;
+}
+.quantity {
+    width: 100px;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    border-radius: 25px;
+    contain: content;
+    justify-content: space-around;
+    box-shadow: inset -1px -1px 2px #FFFFFF, inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.plusminus,.quantitynumber {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: min(1em,20px);
+    height: auto;
+}
+.quantitynumber {
+    padding-right: 5px; 
+    padding-left: 5px;
+}
+}
+
+/* implementing burger menu on account of smaller screen size */
+@media screen and (max-width: 900px) {
+    .toptext1,.toptext2,.toptext3,.toptext4 {
+        display: none;
+    }
+
+    /* new flex orders for topbar items */
+    .burgermenu {
+        order: 1;
+    }
+    .peellogo {
+        order: 2;
+    }
+    .searchicon {
+        order: 3;
+    }
+    .carticon {
+        order: 4;
+    }
+
+    .burgermenu {
+        display: block;
+        margin-top: 1vh;
+        max-width: 100%;
+        width: max(3vh,35px);
+    }
+         #burgercheck {
+            visibility: hidden;
+        }
+        #burgercheck:checked ~ .burgerlist {
+            visibility: visible;
+        } 
+        .burgerlist {
+            color: white;
+            background-color: #000000;
+            width: 50vw;
+            height: 80vh;
+            text-align: right;
+            position: absolute;
+            right: 0;
+            top: 70px;
+            list-style: none;
+            font-family: 'andalemono', Arial, Helvetica, sans-serif;
+            text-align: right;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(30,3vh);
+            z-index: 1;
+            padding: 0%;
+            margin: 0%;
+        }
+        #burgersiteone,#burgersitetwo,#burgersitethree {
+            font-size: max(3vh,20px);
+            grid-column: 1/span 3;
+            padding-right: 5vw;
+        }
+        #burgersiteone {
+            grid-row: 2;
+        }
+        #burgersitetwo {
+            grid-row: 6;
+        }
+        #burgersitethree {
+            grid-row: 10;
+        } 
+}

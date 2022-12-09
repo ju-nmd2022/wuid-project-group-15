@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="global.css"/>
+    <link rel="stylesheet" href="itemcards.css"/>
+    <link rel="stylesheet" href="cart.css"/>
+    <script src="topbar.js" defer></script>
+    <script src="itemcards.js" defer></script>
+    <script src="cart.js" defer></script> 
+</head>
+<body>
+    <!-- -------------------------------------- -->
+    <!--              topbar                    -->
+    <!-- -------------------------------------- -->
+    <div class="topbar">
+        <img class="searchicon" src="icons/searchicon.svg" alt="search icon"/>
+        <a class="toptext1" id="topText1" href="products.html">iPhone Cases</a>
+        <a class="toptext2" id="topText2" href="products.html">iPad Cases</a>
+        <a class="peellogo" href="home.html">
+        <img src="icons/peellogowhite.svg" alt="peel logo"/>
+        </a>
+        <a class="toptext3" id="topText3" href="products.html">AirPod Cases</a>
+        <a class="toptext4" id="topText4" href="products.html">MacBook Cases</a>
+        <a class="carticon" href="cart.html">
+        <img src="icons/carticon.svg" alt="cart icon"/>
+        </a>
+
+    <!-- -------------------------------------- -->
+    <!--              burgermenu                -->
+    <!-- -------------------------------------- -->
+        <div class="burgermenu"> 
+            <input id="burgercheck" type="checkbox"/>
+            <label for="burgercheck">
+                <img class="burger" src="icons/burger.svg"/>
+            </label>
+            <div class="burgerlist">
+            <a class="burgerlink" id="topText1" href="products.html">iPhone Cases</a>
+            <a class="burgerlink" id="topText2" href="products.html">iPad Cases</a>
+            <a class="burgerlink" id="topText3" href="products.html">AirPod Cases</a>
+            <a class="burgerlink" id="topText4" href="products.html">MacBook Cases</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------------------------------- -->
+    <!--              body                      -->
+    <!-- -------------------------------------- -->
+    <div class="wrap">
+
+    <!-- -------------------------------------- -->
+    <!--              heading                   -->
+    <!-- -------------------------------------- -->
+    <p class="cartheading">Your Cart</p>
+    
+    <!-- -------------------------------------- -->
+    <!--              no items in cart          -->
+    <!-- -------------------------------------- -->
+    <p class="emptycart" id="emptyCart">Your Cart Appears to be Empty!</p>
+
+    <!-- -------------------------------------- -->
+    <!--              total price               -->
+    <!-- -------------------------------------- -->
+    <p class="yourtotal" id="yourTotal"></p>
+
+    <!-- -------------------------------------- -->
+    <!--       cart item                        -->
+    <!-- -------------------------------------- -->
+        <div class="cartitem" id="cartItem1">
+            <div class="desktopcartitemimgbackground">
+            <img class="desktopcartitemimg" src="productimg/blackiphone.svg"/>
+            </div>
+            <div class="desktopcartitemtext">
+            <p class="desktopcartitemname">Black Standard</p>
+            <p class="desktopcartitemdevice">iPhone 14</p>
+            <p class="desktopcartitemmaterial">Plastic</p>
+            <p class="desktopcartitemprice">399:-</p>
+            </div>
+            <img class="removecartitem" id="removeCartItem1" src="icons/removeitem.svg" alt="remove item from cart"/>
+            <div class="quantity">
+            <img class="plusminus" id="minus1" src="icons/minus.svg" alt="remove a quantity">
+            <p class="quantitynumber" id="quantityNumber1">1</p>
+            <img class="plusminus" id="plus1" src="icons/plus.svg" alt="add another quantity">
+            </div>
+        </div>
+        <div class="cartitem" id="cartItem2">
+            <div class="desktopcartitemimgbackground">
+            <img class="desktopcartitemimg" src="productimg/browniphone.svg"/>
+            </div>
+            <div class="desktopcartitemtext">
+            <p class="desktopcartitemname">Brown Standard</p>
+            <p class="desktopcartitemdevice">iPhone 14</p>
+            <p class="desktopcartitemmaterial">Plastic</p>
+            <p class="desktopcartitemprice">399:-</p>
+            </div>
+            <img class="removecartitem" id="removeCartItem2" src="icons/removeitem.svg" alt="remove item from cart"/>
+            <div class="quantity">
+            <img class="plusminus" id="minus2" src="icons/minus.svg" alt="remove a quantity">
+            <p class="quantitynumber" id="quantityNumber2">1</p>
+            <img class="plusminus" id="plus2" src="icons/plus.svg" alt="add another quantity">
+            </div>
+        </div>
+        <div class="cartitem" id="cartItem3">
+            <div class="desktopcartitemimgbackground">
+            <img class="desktopcartitemimg" src="productimg/blueiphone.svg"/>
+            </div>
+            <div class="desktopcartitemtext">
+            <p class="desktopcartitemname">Blue Standard</p>
+            <p class="desktopcartitemdevice">iPhone 14</p>
+            <p class="desktopcartitemmaterial">Plastic</p>
+            <p class="desktopcartitemprice">399:-</p>
+            </div>
+            <img class="removecartitem" id="removeCartItem3" src="icons/removeitem.svg" alt="remove item from cart"/>
+            <div class="quantity">
+            <img class="plusminus" id="minus3" src="icons/minus.svg" alt="remove a quantity">
+            <p class="quantitynumber" id="quantityNumber3">1</p>
+            <img class="plusminus" id="plus3" src="icons/plus.svg" alt="add another quantity">
+            </div>
+        </div>
+        <div class="cartitem" id="cartItem4">
+            <div class="desktopcartitemimgbackground">
+            <img class="desktopcartitemimg" src="productimg/blackipad.svg"/>
+            </div>
+            <div class="desktopcartitemtext">
+            <p class="desktopcartitemname">Black Standard</p>
+            <p class="desktopcartitemdevice">iPad (2022)</p>
+            <p class="desktopcartitemmaterial">Plastic</p>
+            <p class="desktopcartitemprice">399:-</p>
+            </div>
+            <img class="removecartitem" id="removeCartItem4" src="icons/removeitem.svg" alt="remove item from cart"/>
+            <div class="quantity">
+            <img class="plusminus" id="minus4" src="icons/minus.svg" alt="remove a quantity">
+            <p class="quantitynumber" id="quantityNumber4">1</p>
+            <img class="plusminus" id="plus4" src="icons/plus.svg" alt="add another quantity">
+            </div>
+        </div>
+        <div class="cartitem" id="cartItem5">
+            <div class="desktopcartitemimgbackground">
+            <img class="desktopcartitemimg" src="productimg/brownipad.svg"/>
+            </div>
+            <div class="desktopcartitemtext">
+            <p class="desktopcartitemname">Brown Standard</p>
+            <p class="desktopcartitemdevice">iPad (2022)</p>
+            <p class="desktopcartitemmaterial">Plastic</p>
+            <p class="desktopcartitemprice">399:-</p>
+            </div>
+            <img class="removecartitem" id="removeCartItem5" src="icons/removeitem.svg" alt="remove item from cart"/>
+            <div class="quantity">
+            <img class="plusminus" id="minus5" src="icons/minus.svg" alt="remove a quantity">
+            <p class="quantitynumber" id="quantityNumber5">1</p>
+            <img class="plusminus" id="plus5" src="icons/plus.svg" alt="add another quantity">
+            </div>
+        </div>
+        <div class="cartitem" id="cartItem6">
+            <div class="desktopcartitemimgbackground">
+            <img class="desktopcartitemimg" src="productimg/blueipad.svg"/>
+            </div>
+            <div class="desktopcartitemtext">
+            <p class="desktopcartitemname">Blue Standard</p>
+            <p class="desktopcartitemdevice">iPad (2022)</p>
+            <p class="desktopcartitemmaterial">Plastic</p>
+            <p class="desktopcartitemprice">399:-</p>
+            </div>
+            <img class="removecartitem" id="removeCartItem6" src="icons/removeitem.svg" alt="remove item from cart"/>
+            <div class="quantity">
+            <img class="plusminus" id="minus6" src="icons/minus.svg" alt="remove a quantity">
+            <p class="quantitynumber" id="quantityNumber6">1</p>
+            <img class="plusminus" id="plus6" src="icons/plus.svg" alt="add another quantity">
+            </div>
+        </div>
+        <div class="cartitem" id="cartItem7">
+            <div class="desktopcartitemimgbackground">
+            <img class="desktopcartitemimg" src="productimg/blackairpods.svg"/>
+            </div>
+            <div class="desktopcartitemtext">
+            <p class="desktopcartitemname">Black Standard</p>
+            <p class="desktopcartitemdevice">AirPods (3rd Gen)</p>
+            <p class="desktopcartitemmaterial">Plastic</p>
+            <p class="desktopcartitemprice">199:-</p>
+            </div>
+            <img class="removecartitem" id="removeCartItem7" src="icons/removeitem.svg" alt="remove item from cart"/>
+            <div class="quantity">
+            <img class="plusminus" id="minus7" src="icons/minus.svg" alt="remove a quantity">
+            <p class="quantitynumber" id="quantityNumber7">1</p>
+            <img class="plusminus" id="plus7" src="icons/plus.svg" alt="add another quantity">
+            </div>
+        </div>
+        <div class="cartitem" id="cartItem8">
+            <div class="desktopcartitemimgbackground">
+            <img class="desktopcartitemimg" src="productimg/brownairpods.svg"/>
+            </div>
+            <div class="desktopcartitemtext">
+            <p class="desktopcartitemname">Brown Standard</p>
+            <p class="desktopcartitemdevice">AirPods (3rd Gen)</p>
+            <p class="desktopcartitemmaterial">Plastic</p>
+            <p class="desktopcartitemprice">199:-</p>
+            </div>
+            <img class="removecartitem" id="removeCartItem8" src="icons/removeitem.svg" alt="remove item from cart"/>
+            <div class="quantity">
+            <img class="plusminus" id="minus8" src="icons/minus.svg" alt="remove a quantity">
+            <p class="quantitynumber" id="quantityNumber8">1</p>
+            <img class="plusminus" id="plus8" src="icons/plus.svg" alt="add another quantity">
+            </div>
+        </div>
+        <div class="cartitem" id="cartItem9">
+            <div class="desktopcartitemimgbackground">
+            <img class="desktopcartitemimg" src="productimg/blueairpods.svg"/>
+            </div>
+            <div class="desktopcartitemtext">
+            <p class="desktopcartitemname">Blue Standard</p>
+            <p class="desktopcartitemdevice">AirPods (3rd Gen)</p>
+            <p class="desktopcartitemmaterial">Plastic</p>
+            <p class="desktopcartitemprice">199:-</p>
+            </div>
+            <img class="removecartitem" id="removeCartItem9" src="icons/removeitem.svg" alt="remove item from cart"/>
+            <div class="quantity">
+            <img class="plusminus" id="minus9" src="icons/minus.svg" alt="remove a quantity">
+            <p class="quantitynumber" id="quantityNumber9">1</p>
+            <img class="plusminus" id="plus9" src="icons/plus.svg" alt="add another quantity">
+            </div>
+        </div>
+        <div class="cartitem" id="cartItem10">
+            <div class="desktopcartitemimgbackground">
+            <img class="desktopcartitemimg" src="productimg/blackmacbook.svg"/>
+            </div>
+            <div class="desktopcartitemtext">
+            <p class="desktopcartitemname">Black Sleeve</p>
+            <p class="desktopcartitemdevice">MacBook Air M2</p>
+            <p class="desktopcartitemmaterial">Leather</p>
+            <p class="desktopcartitemprice">899:-</p>
+            </div>
+            <img class="removecartitem" id="removeCartItem10" src="icons/removeitem.svg" alt="remove item from cart"/>
+            <div class="quantity">
+            <img class="plusminus" id="minus10" src="icons/minus.svg" alt="remove a quantity">
+            <p class="quantitynumber" id="quantityNumber10">1</p>
+            <img class="plusminus" id="plus10" src="icons/plus.svg" alt="add another quantity">
+            </div>
+        </div>
+        <div class="cartitem" id="cartItem11">
+            <div class="desktopcartitemimgbackground">
+            <img class="desktopcartitemimg" src="productimg/brownmacbook.svg"/>
+            </div>
+            <div class="desktopcartitemtext">
+            <p class="desktopcartitemname">Brown Sleeve</p>
+            <p class="desktopcartitemdevice">MacBook Air M2</p>
+            <p class="desktopcartitemmaterial">Leather</p>
+            <p class="desktopcartitemprice">899:-</p>
+            </div>
+            <img class="removecartitem" id="removeCartItem11" src="icons/removeitem.svg" alt="remove item from cart"/>
+            <div class="quantity">
+            <img class="plusminus" id="minus11" src="icons/minus.svg" alt="remove a quantity">
+            <p class="quantitynumber" id="quantityNumber11">1</p>
+            <img class="plusminus" id="plus11" src="icons/plus.svg" alt="add another quantity">
+            </div>
+        </div>
+        <div class="cartitem" id="cartItem12">
+            <div class="desktopcartitemimgbackground">
+            <img class="desktopcartitemimg" src="productimg/bluemacbook.svg"/>
+            </div>
+            <div class="desktopcartitemtext">
+            <p class="desktopcartitemname">Blue Sleeve</p>
+            <p class="desktopcartitemdevice">MacBook Air M2</p>
+            <p class="desktopcartitemmaterial">Leather</p>
+            <p class="desktopcartitemprice">899:-</p>
+            </div>
+            <img class="removecartitem" id="removeCartItem12" src="icons/removeitem.svg" alt="remove item from cart"/>
+            <div class="quantity">
+            <img class="plusminus" id="minus12" src="icons/minus.svg" alt="remove a quantity">
+            <p class="quantitynumber" id="quantityNumber12">1</p>
+            <img class="plusminus" id="plus12" src="icons/plus.svg" alt="add another quantity">
+            </div>
+        </div>
+        
+        
+    <!-- -------------------------------------- -->
+    <!--              subheading                -->
+    <!-- -------------------------------------- --> 
+        <p class="cartheading" id="mayWeRecommend">May We Also Recommend?</p>
+
+    <!-- -------------------------------------- -->
+    <!--              recommended items         -->
+    <!-- -------------------------------------- --> 
+    <div class="itemlistcontainer">
+        <div class="productcard" id="iphone1">
+            <div class="carthover" id="cartHover1">
+            <img class="addtocart" id="addToCart1" src="icons/carticon.svg"/>
+            </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg1" src="productimg/blackiphone.svg"/>
+            </div> 
+            <p class="productcardname">Black Standard</p>
+            <p class="productcarddevice">iPhone 14</p>
+            <p class="productcardprice">399:-</p>
+        </div>
+        <div class="productcard" id="iphone2">
+            <div class="carthover" id="cartHover2">
+                <img class="addtocart" id="addToCart2" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg2" src="productimg/browniphone.svg"/>
+            </div> 
+            <p class="productcardname">Brown Standard</p>
+            <p class="productcarddevice">iPhone 14</p>
+            <p class="productcardprice">399:-</p>
+            
+        </div>
+        <div class="productcard" id="iphone3">
+            <div class="carthover" id="cartHover3">
+                <img class="addtocart" id="addToCart3" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg3" src="productimg/blueiphone.svg"/>
+            </div> 
+            <p class="productcardname">Blue Standard</p>
+            <p class="productcarddevice">iPhone 14</p>
+            <p class="productcardprice">399:-</p>
+         
+        </div>
+        <div class="productcard" id="ipad1">
+            <div class="carthover" id="cartHover4">
+                <img class="addtocart" id="addToCart4" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg4" src="productimg/blackipad.svg"/>
+            </div> 
+            <p class="productcardname">Black Standard</p>
+            <p class="productcarddevice">iPad(2022)</p>
+            <p class="productcardprice">399:-</p>
+        </div>
+        <div class="productcard" id="ipad2">
+            <div class="carthover" id="cartHover5">
+                <img class="addtocart" id="addToCart5" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg5" src="productimg/brownipad.svg"/>
+            </div> 
+            <p class="productcardname">Brown Standard</p>
+            <p class="productcarddevice">iPad(2022)</p>
+            <p class="productcardprice">399:-</p>
+        </div>
+        <div class="productcard" id="ipad3">
+            <div class="carthover" id="cartHover6">
+                <img class="addtocart" id="addToCart6" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg6" src="productimg/blueipad.svg"/>
+            </div> 
+            <p class="productcardname">Blue Standard</p>
+            <p class="productcarddevice">iPad(2022)</p>
+            <p class="productcardprice">399:-</p>
+        </div>
+        <div class="productcard" id="airpods1">
+            <div class="carthover" id="cartHover7">
+                <img class="addtocart" id="addToCart7" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg7" src="productimg/blackairpods.svg"/>
+            </div> 
+            <p class="productcardname">Black Standard</p>
+            <p class="productcarddevice">AirPods(3rd Gen)</p>
+            <p class="productcardprice">199:-</p>
+        </div>
+        <div class="productcard" id="airpods2">
+            <div class="carthover" id="cartHover8">
+                <img class="addtocart" id="addToCart8" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg8" src="productimg/brownairpods.svg"/>
+            </div> 
+            <p class="productcardname">Brown Standard</p>
+            <p class="productcarddevice">AirPods(3rd Gen)</p>
+            <p class="productcardprice">199:-</p>
+        </div>
+        <div class="productcard" id="airpods3">
+            <div class="carthover" id="cartHover9">
+                <img class="addtocart" id="addToCart9" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg9" src="productimg/blueairpods.svg"/>
+            </div> 
+            <p class="productcardname">Blue Standard</p>
+            <p class="productcarddevice">AirPods(3rd Gen)</p>
+            <p class="productcardprice">199:-</p>
+        </div>
+        <div class="productcard" id="macbook1">
+            <div class="carthover" id="cartHover10">
+                <img class="addtocart" id="addToCart10" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg10" src="productimg/blackmacbook.svg"/>
+            </div> 
+            <p class="productcardname">Black Sleeve</p>
+            <p class="productcarddevice">MacBook Air(M2)</p>
+            <p class="productcardprice">899:-</p>
+        </div>
+        <div class="productcard" id="macbook2">
+            <div class="carthover" id="cartHover11">
+                <img class="addtocart" id="addToCart11" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg11" src="productimg/brownmacbook.svg"/>
+            </div> 
+            <p class="productcardname">Black Sleeve</p>
+            <p class="productcarddevice">MacBook Air(M2)</p>
+            <p class="productcardprice">899:-</p>
+        </div>
+        <div class="productcard" id="macbook3">
+            <div class="carthover" id="cartHover12">
+                <img class="addtocart" id="addToCart12" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg12" src="productimg/bluemacbook.svg"/>
+            </div> 
+            <p class="productcardname">Black Sleeve</p>
+            <p class="productcarddevice">MacBook Air(M2)</p>
+            <p class="productcardprice">899:-</p>
+        </div>
+    </div>
+
+    <!-- -------------------------------------- -->
+    <!--              paybuttons                -->
+    <!-- -------------------------------------- --> 
+    <div class="paybuttons">
+    <a class="applepay" id="applePay">
+        <img class="applepaylogo" src="payicons/applepay.svg"/>
+    </a>
+    <a class="paywithcard" id="payWithCard" href="cart.html#cardinputsection">
+        <p class="paytext">Pay With Card</p>
+    </a>
+    </div>
+    <div class="applepayscreen" id="applePayScreen">
+
+    </div>
+
+
+    <!-- -------------------------------------- -->
+    <!--              cardinformation           -->
+    <!-- -------------------------------------- --> 
+    <section id="cardinputsection">
+    <div class="cardinput">
+        <p class="cardtext1">Cardnumber</p>
+        <input type="text" class="cardnumber" id="cardNumber">
+        <p class="cardtext2">Cardholder Name</p>
+        <input type="text" class="cardholdername" id="cardholderName">
+        <p class="cardtext3">Expiration Date</p>
+        <input type="text" class="expirationyear" id="expirationYear">
+        <input type="text" class="expirationmonth" id="expirationMonth">
+        <p class="cardtext4">CCV</p>
+        <input type="text" class="ccv" id="ccv">
+        <input type="checkbox" class="savecard"/>
+        <p class="cardtext5">Save this card for future purchases</p>
+        <button class="submitcardinformation" id="submitCardInformation">
+        <a class="buttonlink" href="cart.html#orderconfirmationsection"></a>
+            <p class="paytext">Pay</p>
+        </button>
+    </div>
+    </section>
+    
+    <!-- -------------------------------------- -->
+    <!--              order confirmation        -->
+    <!-- -------------------------------------- --> 
+    <section id="orderconfirmationsection">
+    <div class="orderconfirmation" id="orderConfirmation">
+        <p class="cartheading">Thank You For Your Order!</p>
+        <p class="yourtotal" id="orderConfirmationText"></p>
+    </div>
+    </section>
+</div>
+
+    
+
+    
+    <div class="bottombar">
+        <div class="bottombarcontainer">
+        <img class="socialmediaicon" src="icons/instagramicon.svg" alt="instagram icon"/>
+        <img class="socialmediaicon" src="icons/facebookicon.svg" alt="facebook icon"/>
+        <img class="socialmediaicon" src="icons/twittericon.svg" alt="twitter icon"/>
+        <p class="bottomtext">© 2022 Peel. All rights reserved</p>
+        <p class="bottomtext">Marcus Svahn/Sven Emilsson</p>
+        </div>
+    </div>
+</body>
+</html>

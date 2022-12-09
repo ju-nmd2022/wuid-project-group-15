@@ -1,0 +1,187 @@
+/* ------------------------------------------------ */
+/*                    global                        */
+/* ------------------------------------------------ */
+html {
+    background-color: #dedede;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: helvetica, arial, sans-serif;
+}
+
+/* ------------------------------------------------ */
+/*                    topbar                        */
+/* ------------------------------------------------ */
+.topbar {
+    background-color: #101010;
+    width: 100vw;
+    height: max(8vh,75px);
+    contain: content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.peellogo {
+    max-width: 100%;
+    width: max(9vh,80px);
+    color: #FFFFFF;
+}
+
+.toptext1,.toptext2,.toptext3,.toptext4 {
+    color: white;
+    font-family: helvetica, arial, sans-serif;
+    font-size: max(1.4vh,14pt);
+    text-decoration: none;
+}
+.peellogo:hover {
+    color: #a9a9a9;
+    cursor: pointer;
+}
+.toptext1:hover,.toptext2:hover,.toptext3:hover,.toptext4:hover {
+    color: #a9a9a9;
+    cursor: pointer;
+}
+.carticon,.searchicon {
+
+    max-width: 100%;
+    width: max(2vh,35px);
+    /* filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(168deg) brightness(103%) contrast(105%); */
+    cursor: pointer;
+}
+.topicon:hover{
+    max-width: 100%;
+    width: max(2vh,35px);
+    filter: invert(75%) sepia(6%) saturate(8%) hue-rotate(7deg) brightness(91%) contrast(89%);
+    cursor: pointer;
+}
+
+/* ------------------------------------------------ */
+/*          flex orders for topbar                  */
+/* ------------------------------------------------ */
+.searchicon {
+    order: 1;
+}
+.toptext1 {
+    order: 2;
+}
+.toptext2 {
+    order: 3;
+}
+.peellogo {
+    order: 4;
+}
+.toptext3 {
+    order: 5;
+}
+.toptext4 {
+    order: 6;
+}
+.carticon {
+    order: 7;
+}
+
+/* ------------------------------------------------ */
+/*                    bodywrap                      */
+/* ------------------------------------------------ */
+.wrap {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ------------------------------------------------ */
+/*                    bottombar                     */
+/* ------------------------------------------------ */
+.bottombar {
+    background-color: #000000;
+    width: 100vw;
+    height: max(10vh,200px);
+    contain: content;
+    position: relative;
+    bottom: 0;
+}
+.bottombarcontainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    gap: 2vh 2vh;
+}
+.bottomtext {
+    color: white;
+    font-family: helvetica, arial, sans-serif;
+}
+
+.payicons {
+    position: absolute;
+}
+
+/* initially hidden content */
+.burgermenu {
+    display: none;
+}
+.burgerlist {
+    visibility: hidden;
+}
+
+
+/* implementing burger menu on account of smaller screen size */
+@media screen and (max-width: 900px) {
+    .toptext1,.toptext2,.toptext3,.toptext4 {
+        display: none;
+    }
+
+    /* new flex orders for topbar items */
+    .burgermenu {
+        order: 1;
+    }
+    .peellogo {
+        order: 2;
+    }
+    .searchicon {
+        order: 3;
+    }
+    .carticon {
+        order: 4;
+    }
+    .topbar {
+        contain: layout;
+    }
+
+    .burgermenu {
+        display: block;
+        margin-top: 1vh;
+        max-width: 100%;
+        width: max(3vh,35px);
+    }
+         #burgercheck {
+            display: none;
+        }
+        #burgercheck:checked ~ .burgerlist {
+            visibility: visible;
+        } 
+        .burgerlist {
+            background-color: #141414;
+            width: 50vw;
+            height: auto;
+            position: absolute;
+            left: 0;
+            top: max(8vh,75px);
+            z-index: 1;
+            contain: content;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 10%;
+        }
+        .burgerlink {
+            font-size: max(3vh,20px);
+            padding: 10%;
+            text-decoration: none;
+        }
+        .burgerlink:visited {
+            color: #FFFFFF;
+        }
+}

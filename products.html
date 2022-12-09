@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="global.css"/>
+    <link rel="stylesheet" href="itemcards.css"/>
+    <link rel="stylesheet" href="products.css"/>
+    <script src="products.js" defer></script>
+    <script src="topbar.js" defer></script>
+    <script src="itemcards.js" defer></script>
+</head>
+<body>
+
+    <!-- -------------------------------------- -->
+    <!--              topbar                    -->
+    <!-- -------------------------------------- -->
+    <div class="topbar">
+        <img class="searchicon" src="icons/searchicon.svg" alt="search icon"/>
+        <a class="toptext1" id="topText1" href="products.html">iPhone Cases</a>
+        <a class="toptext2" id="topText2" href="products.html">iPad Cases</a>
+        <a class="peellogo" href="home.html">
+        <img src="icons/peellogowhite.svg" alt="peel logo"/>
+        </a>
+        <a class="toptext3" id="topText3" href="products.html">AirPod Cases</a>
+        <a class="toptext4" id="topText4" href="products.html">MacBook Cases</a>
+        <a class="carticon" href="cart.html">
+        <img src="icons/carticon.svg" alt="cart icon"/>
+        </a>
+
+    <!-- -------------------------------------- -->
+    <!--              burgermenu                -->
+    <!-- -------------------------------------- -->
+        <div class="burgermenu"> 
+            <input id="burgercheck" type="checkbox"/>
+            <label for="burgercheck">
+                <img class="burger" src="icons/burger.svg"/>
+            </label>
+            <div class="burgerlist">
+            <a class="burgerlink" id="topText1" href="products.html">iPhone Cases</a>
+            <a class="burgerlink" id="topText2" href="products.html">iPad Cases</a>
+            <a class="burgerlink" id="topText3" href="products.html">AirPod Cases</a>
+            <a class="burgerlink" id="topText4" href="products.html">MacBook Cases</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- filtering options -->
+    <div class="wrap">
+    <div class="filteroptioncontainer">
+        <p class="filteroptionheadline" id="filterOptionHeadline">Showing: All Products</p>
+        <div class="filteroptionrestrictor" id="filterOptionRestrictor1">
+        <div class="filteroption">
+            <p class="filteroptiontext">Device</p>
+        </div>
+        <div class="filterdropdown" id="filterOptionDropdown1">
+            <p class="filterdropdowntext" id="iphoneFilter">iPhone</p>
+            <p class="filterdropdowntext" id="ipadFilter">iPad</p>
+            <p class="filterdropdowntext" id="airpodsFilter">AirPods</p>
+            <p class="filterdropdowntext" id="macbookFilter">MacBook</p>
+        </div>
+    </div>
+    <div class="filteroptionrestrictor" id="filterOptionRestrictor2">
+        <div class="filteroption">
+            <p class="filteroptiontext">Type</p>
+        </div>
+        <div class="filterdropdown" id="filterOptionDropdown2">
+            <p class="filterdropdowntext" id="standardFilter">Standard</p>
+            <p class="filterdropdowntext" id="sleeveFilter">Sleeve</p>
+        </div>
+    </div>
+        <div class="filteroptionrestrictor" id="filterOptionRestrictor3">
+        <div class="filteroption">
+            <p class="filteroptiontext">Color</p>
+        </div>
+        <div class="filterdropdown" id="filterOptionDropdown3">
+            <p class="filterdropdowntext" id="blackFilter">Black</p>
+            <p class="filterdropdowntext" id="brownFilter">Brown</p>
+            <p class="filterdropdowntext" id="blueFilter">Blue</p>
+        </div>
+    </div>
+        <div class="filteroptionrestrictor" id="filterOptionRestrictor4">
+        <div class="filteroption">
+            <p class="filteroptiontext">Material</p>
+        </div>
+        <div class="filterdropdown" id="filterOptionDropdown4">
+            <p class="filterdropdowntext" id="plasticFilter">Plastic</p>
+            <p class="filterdropdowntext" id="leatherFilter">Leather</p>
+        </div>
+    </div>
+
+        <!-- initially hidden (smaller filterbutton): -->
+        <div class="filterbuttonrestrictor" id="filterButtonRestrictor">
+            <div class="filterbutton" id="filterButton">
+                <img class="filtericon" src="icons/filter.svg"/>
+                <p class="filtertext">/</p>
+                <img class="sorticon" src="icons/sort.svg"/>
+            </div>
+            <div class="filterbuttonselected" id="filterButtonSelected">
+                <img class="filtericon" src="icons/filter.svg"/>
+                <p class="filtertext">I</p>
+                <img class="sorticon" src="icons/sort.svg"/>
+            </div>   
+            <div class="filtersortlist" id="filterSortList">
+                <div class="filterlist">
+                    <p class="filterbuttonheadline1">Device</p>
+                    <div class="filteroptionsmobile">
+                    <p class="filterlistitem" id="iphoneFilterMobile">iPhone</p>
+                    <p class="filterlistitem" id="ipadFilterMobile">iPad</p>
+                    <p class="filterlistitem" id="airpodsFilterMobile">AirPods</p>
+                    <p class="filterlistitem" id="macbookFilterMobile">MacBook</p>
+                    </div>
+                    <p class="filterbuttonheadline2">Type</p>
+                    <div class="filteroptionsmobile">
+                    <p class="filterlistitem" id="standardFilterMobile">Standard</p>
+                    <p class="filterlistitem" id="sleeveFilterMobile">Sleeve</p>
+                    </div>
+                    <p class="filterbuttonheadline3">Color</p>
+                    <div class="filteroptionsmobile">
+                    <p class="filterlistitem" id="blackFilterMobile">Black</p>
+                    <p class="filterlistitem" id="brownFilterMobile">Brown</p>
+                    <p class="filterlistitem" id="blueFilterMobile">Blue</p>
+                    </div>
+                    <p class="filterbuttonheadline4">Material</p>
+                    <div class="filteroptionsmobile">
+                    <p class="filterlistitem" id="plasticFilterMobile">Plastic</p>
+                    <p class="filterlistitem" id="leatherFilterMobile">Leather</p>
+                    </div>
+                </div>
+                <div class="sortlist">
+                    <p class="sortlistitem">sorting options are not yet available!</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+        
+        
+        </div>
+    <div class="itemlistcontainer">
+        <div class="productcard" id="iphone1">
+            <div class="carthover" id="cartHover1">
+            <img class="addtocart" id="addToCart1" src="icons/carticon.svg"/>
+            </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg1" src="productimg/blackiphone.svg"/>
+            </div> 
+            <p class="productcardname">Black Standard</p>
+            <p class="productcarddevice">iPhone 14</p>
+            <p class="productcardprice">399:-</p>
+        </div>
+        <div class="productcard" id="iphone2">
+            <div class="carthover" id="cartHover2">
+                <img class="addtocart" id="addToCart2" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg2" src="productimg/browniphone.svg"/>
+            </div> 
+            <p class="productcardname">Brown Standard</p>
+            <p class="productcarddevice">iPhone 14</p>
+            <p class="productcardprice">399:-</p>
+            
+        </div>
+        <div class="productcard" id="iphone3">
+            <div class="carthover" id="cartHover3">
+                <img class="addtocart" id="addToCart3" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg3" src="productimg/blueiphone.svg"/>
+            </div> 
+            <p class="productcardname">Blue Standard</p>
+            <p class="productcarddevice">iPhone 14</p>
+            <p class="productcardprice">399:-</p>
+         
+        </div>
+        <div class="productcard" id="ipad1">
+            <div class="carthover" id="cartHover4">
+                <img class="addtocart" id="addToCart4" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg4" src="productimg/blackipad.svg"/>
+            </div> 
+            <p class="productcardname">Black Standard</p>
+            <p class="productcarddevice">iPad(2022)</p>
+            <p class="productcardprice">399:-</p>
+        </div>
+        <div class="productcard" id="ipad2">
+            <div class="carthover" id="cartHover5">
+                <img class="addtocart" id="addToCart5" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg5" src="productimg/brownipad.svg"/>
+            </div> 
+            <p class="productcardname">Brown Standard</p>
+            <p class="productcarddevice">iPad(2022)</p>
+            <p class="productcardprice">399:-</p>
+        </div>
+        <div class="productcard" id="ipad3">
+            <div class="carthover" id="cartHover6">
+                <img class="addtocart" id="addToCart6" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg6" src="productimg/blueipad.svg"/>
+            </div> 
+            <p class="productcardname">Blue Standard</p>
+            <p class="productcarddevice">iPad(2022)</p>
+            <p class="productcardprice">399:-</p>
+        </div>
+        <div class="productcard" id="airpods1">
+            <div class="carthover" id="cartHover7">
+                <img class="addtocart" id="addToCart7" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg7" src="productimg/blackairpods.svg"/>
+            </div> 
+            <p class="productcardname">Black Standard</p>
+            <p class="productcarddevice">AirPods(3rd Gen)</p>
+            <p class="productcardprice">199:-</p>
+        </div>
+        <div class="productcard" id="airpods2">
+            <div class="carthover" id="cartHover8">
+                <img class="addtocart" id="addToCart8" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg8" src="productimg/brownairpods.svg"/>
+            </div> 
+            <p class="productcardname">Brown Standard</p>
+            <p class="productcarddevice">AirPods(3rd Gen)</p>
+            <p class="productcardprice">199:-</p>
+        </div>
+        <div class="productcard" id="airpods3">
+            <div class="carthover" id="cartHover9">
+                <img class="addtocart" id="addToCart9" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg9" src="productimg/blueairpods.svg"/>
+            </div> 
+            <p class="productcardname">Blue Standard</p>
+            <p class="productcarddevice">AirPods(3rd Gen)</p>
+            <p class="productcardprice">199:-</p>
+        </div>
+        <div class="productcard" id="macbook1">
+            <div class="carthover" id="cartHover10">
+                <img class="addtocart" id="addToCart10" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg10" src="productimg/blackmacbook.svg"/>
+            </div> 
+            <p class="productcardname">Black Sleeve</p>
+            <p class="productcarddevice">MacBook Air(M2)</p>
+            <p class="productcardprice">899:-</p>
+        </div>
+        <a class="productcard" id="macbook2" href="macbook.html">
+            <div class="carthover" id="cartHover11">
+                <img class="addtocart" id="addToCart11" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+                <img class="productcardimg" id="productCardImg11" src="productimg/brownmacbook.svg"/>
+            </div> 
+            <p class="productcardname">Brown Sleeve</p>
+            <p class="productcarddevice">MacBook Air(M2)</p>
+            <p class="productcardprice">899:-</p>
+        </a>
+        <div class="productcard" id="macbook3">
+            <div class="carthover" id="cartHover12">
+                <img class="addtocart" id="addToCart12" src="icons/carticon.svg"/>
+                </div>
+            <div class="productcardimgcontainer">
+            <img class="productcardimg" id="productCardImg12" src="productimg/bluemacbook.svg"/>
+            </div> 
+            <p class="productcardname">Black Sleeve</p>
+            <p class="productcarddevice">MacBook Air(M2)</p>
+            <p class="productcardprice">899:-</p>
+        </div>
+
+        <!-- error message if item doesnt exist -->
+        <p class="notadded" id="notAdded">Sorry! We don't carry an item with the selected filter(s) ...yet</p>
+       
+    </div>
+    </div>
+    <div class="bottombar">
+        <div class="bottombarcontainer">
+                <img class="socialmediaicon" src="icons/instagramicon.svg" alt="instagram icon"/>
+                <img class="socialmediaicon" src="icons/facebookicon.svg" alt="facebook icon"/>
+                <img class="socialmediaicon" src="icons/twittericon.svg" alt="twitter icon"/>
+        <p class="bottomtext">© 2022 Peel. All rights reserved</p>
+        <p class="bottomtext">Marcus Svahn/Sven Emilsson</p>
+        </div>
+    </div>
+</body>
+</html>

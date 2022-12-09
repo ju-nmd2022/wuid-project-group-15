@@ -1,0 +1,241 @@
+/* ------------------------------------------------ */
+/*                    bottombar                     */
+/* ------------------------------------------------ */
+.bottombar {
+    background-color: #000000;
+    width: 100vw;
+    height: max(10vh,200px);
+    contain: content;
+    position: relative;
+    bottom: 0;
+}
+.bottombarcontainer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    gap: 2vh 2vh;
+}
+.bottomtext {
+    color: white;
+    font-family: helvetica, arial, sans-serif;
+}
+
+
+/* ------------------------------------------------ */
+/*                    filter options                */
+/* ------------------------------------------------ */
+
+.filteroptioncontainer {
+    display: flex;
+    margin-top: 8vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.filteroptionheadline {
+    font-size: max(2.7vh,18pt);
+    min-width: 100%;
+    text-align: center;
+}
+.filteroptionrestrictor {
+    width: 271px;
+    height: 49px;
+    border-radius: 25px;
+    contain: layout;
+    overflow: hidden;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    z-index: 1;
+}
+.filteroption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    width: 271px;
+    height: 49px;
+    border-radius: 25px;
+    min-width: 271px;
+    min-height: 49px;
+    contain: content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.filteroptiontext {
+    color: white;
+    font-size: 1.6em;
+    /* the following three lines regarding text selection were taken from https://www.w3schools.com/howto/howto_css_disable_text_selection.asp */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.filterdropdown {
+    background-color: #5f5f5f;
+    width: 271px;
+    height: auto;
+    max-height: 15vh;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+    padding-top: 64px;
+    padding-bottom: 40px;
+}
+.filterdropdowntext {
+    color: white;
+    font-size: 1.4em;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    /* the following three lines regarding text selection were taken from https://www.w3schools.com/howto/howto_css_disable_text_selection.asp */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.notadded {
+    display: none;
+}
+
+
+/* ------------------------------------------------ */
+/*                    filter button                 */
+/* ------------------------------------------------ */
+/* (added on smaller screens) */
+
+.filterbuttonrestrictor {
+    width: 190px;
+    height: 49px;
+    border-radius: 25px;
+    contain: layout;
+    overflow: hidden;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    z-index: 1;
+}
+.filterbutton,.filterbuttonselected {
+    background-color: #000000;
+    width: 190px;
+    height: 49px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 25px 0px #00000080;
+    box-shadow: -5px -5px 25px 0px #FFFFFF;
+    contain: layout;
+    z-index: 3;
+}
+.filtericon,.sorticon {
+    position: absolute;
+    max-width: 100%;
+    top: 14px;
+} 
+.filtericon {
+    left: 35px;
+}
+.sorticon {
+    right: 35px;
+}
+.filtertext {
+    color: #ffffff;
+    font-size: 20pt;
+    position: absolute;
+    left: 93px;
+    top: 9px;
+}
+.filtersortlist {
+    background-color: #5f5f5f;
+    width: 190px;
+    height: auto;
+    border-radius: 25px;
+    contain: layout;
+    position: absolute;
+    top: 49px;
+    left: 0;
+}
+.filterlist {
+    background-color: #151515;
+    width: 70px;
+    height: auto;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    padding-right: 0px;
+}
+.sortlist {
+    background-color: #ffffff;
+    width: 70px;
+    height: auto;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px;
+    padding-left: 0px;
+}
+.filterbuttonheadline1,.filterbuttonheadline2,.filterbuttonheadline3,.filterbuttonheadline4 {
+    color: white;
+    font-weight: bold;
+}
+.filteroptionsmobile {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    overflow-x: scroll;
+}
+.filterlistitem {
+    color: white;
+    padding: 10px;
+}
+.sortlistitem {
+    color: black;
+    padding: 10px;
+}
+
+
+/* initially hidden content */
+.filterbutton {
+    display: none;
+}
+.filterbuttonrestrictor {
+    display: none;
+}
+
+
+/* implementing filter button on account of smaller screen size */
+@media screen and (max-width: 1440px) {
+    .filteroptionrestrictor {
+        display: none;
+    }
+    .filterbuttonrestrictor {
+        display: block;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:active {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+
+
+
+
