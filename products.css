@@ -131,7 +131,7 @@
     box-shadow: 5px 5px 25px 0px #00000080;
     box-shadow: -5px -5px 25px 0px #FFFFFF;
     contain: none;
-    z-index: 0;
+    z-index: 3;
 }
 .filtericon,.sorticon {
     position: absolute;
