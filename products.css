@@ -36,7 +36,7 @@
     border-radius: 25px;
     min-width: 271px;
     min-height: 49px;
-    contain: content;
+    contain: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +62,7 @@
     border-radius: 25px;
     padding-top: 64px;
     padding-bottom: 40px;
+    z-index: 0;
 }
 .filterdropdowntext {
     color: white;
@@ -191,7 +192,7 @@
 
 
 /* implementing filter button on account of smaller screen size */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 900px) {
     .filteroptionrestrictor {
         display: none;
     }
