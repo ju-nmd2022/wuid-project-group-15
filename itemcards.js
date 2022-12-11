@@ -75,7 +75,7 @@ const notAdded = document.getElementById('notAdded');
 // when hovering over a card the add to cart button appears, when clicking a card the item gets added to cart
 
 iphone1.addEventListener('mouseover', function () {
-    cartHover1.style.display = "block";
+    cartHover1.style.display = "flex";
     productCardImg1.style.display = "none";  
 })
 iphone1.addEventListener('mouseout', function () {
@@ -88,7 +88,7 @@ iphone1.addEventListener('click', function () {
 })
 
 iphone2.addEventListener('mouseover', function () {
-    cartHover2.style.display = "block";
+    cartHover2.style.display = "flex";
     productCardImg2.style.display = "none";  
 })
 iphone2.addEventListener('mouseout', function () {
@@ -101,7 +101,7 @@ iphone2.addEventListener('click', function () {
 })
 
 iphone3.addEventListener('mouseover', function () {
-    cartHover3.style.display = "block";
+    cartHover3.style.display = "flex";
     productCardImg3.style.display = "none";  
 })
 iphone3.addEventListener('mouseout', function () {
@@ -114,7 +114,7 @@ iphone3.addEventListener('click', function () {
 })
 
 ipad1.addEventListener('mouseover', function () {
-    cartHover4.style.display = "block";
+    cartHover4.style.display = "flex";
     productCardImg4.style.display = "none";  
 })
 ipad1.addEventListener('mouseout', function () {
@@ -127,7 +127,7 @@ ipad1.addEventListener('click', function () {
 })
 
 ipad2.addEventListener('mouseover', function () {
-    cartHover5.style.display = "block";
+    cartHover5.style.display = "flex";
     productCardImg5.style.display = "none";  
 })
 ipad2.addEventListener('mouseout', function () {
@@ -140,7 +140,7 @@ ipad2.addEventListener('click', function () {
 })
 
 ipad3.addEventListener('mouseover', function () {
-    cartHover6.style.display = "block";
+    cartHover6.style.display = "flex";
     productCardImg6.style.display = "none";  
 })
 ipad3.addEventListener('mouseout', function () {
@@ -153,7 +153,7 @@ ipad3.addEventListener('click', function () {
 })
 
 airpods1.addEventListener('mouseover', function () {
-    cartHover7.style.display = "block";
+    cartHover7.style.display = "flex";
     productCardImg7.style.display = "none";  
 })
 airpods1.addEventListener('mouseout', function () {
@@ -166,7 +166,7 @@ airpods1.addEventListener('click', function () {
 })
 
 airpods2.addEventListener('mouseover', function () {
-    cartHover8.style.display = "block";
+    cartHover8.style.display = "flex";
     productCardImg8.style.display = "none";  
 })
 airpods2.addEventListener('mouseout', function () {
@@ -179,7 +179,7 @@ airpods2.addEventListener('click', function () {
 })
 
 airpods3.addEventListener('mouseover', function () {
-    cartHover9.style.display = "block";
+    cartHover9.style.display = "flex";
     productCardImg9.style.display = "none";  
 })
 airpods3.addEventListener('mouseout', function () {
@@ -192,7 +192,7 @@ airpods3.addEventListener('click', function () {
 })
 
 macbook1.addEventListener('mouseover', function () {
-    cartHover10.style.display = "block";
+    cartHover10.style.display = "flex";
     productCardImg10.style.display = "none";  
 })
 macbook1.addEventListener('mouseout', function () {
@@ -205,7 +205,7 @@ macbook1.addEventListener('click', function () {
 })
 
 macbook2.addEventListener('mouseover', function () {
-    cartHover11.style.display = "block";
+    cartHover11.style.display = "flex";
     productCardImg11.style.display = "none";  
 })
 macbook2.addEventListener('mouseout', function () {
@@ -218,7 +218,7 @@ macbook2.addEventListener('click', function () {
 })
 
 macbook3.addEventListener('mouseover', function () {
-    cartHover12.style.display = "block";
+    cartHover12.style.display = "flex";
     productCardImg12.style.display = "none";  
 })
 macbook3.addEventListener('mouseout', function () {

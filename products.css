@@ -164,7 +164,7 @@
 .filterlist {
     background-color: #151515;
     width: 70px;
-    height: auto;
+    height: 280px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     position: absolute;
@@ -176,7 +176,7 @@
 .sortlist {
     background-color: #ffffff;
     width: 70px;
-    height: auto;
+    height: 280px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     position: absolute;
