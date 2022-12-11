@@ -130,8 +130,8 @@
     border-radius: 25px;
     box-shadow: 5px 5px 25px 0px #00000080;
     box-shadow: -5px -5px 25px 0px #FFFFFF;
-    contain: layout;
-    z-index: 3;
+    contain: none;
+    z-index: 0;
 }
 .filtericon,.sorticon {
     position: absolute;
@@ -212,6 +212,9 @@
 .filterbuttonrestrictor {
     display: none;
 }
+.filterbuttonselected {
+    display: none;
+}
 
 
 /* implementing filter button on account of smaller screen size */
@@ -220,6 +223,9 @@
         display: none;
     }
     .filterbuttonrestrictor {
+        display: block;
+    }
+    .filterbutton {
         display: block;
     }
 }
