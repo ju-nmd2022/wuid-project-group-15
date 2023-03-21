@@ -17,6 +17,7 @@
     width: 100%;
     font-size: 2.5vw;
     /* padding: 5% 0px; */
+    margin-top: max(8vmin,75px);
     font-weight: 500;
     margin-top: 10%;
     animation-name: mainpageanimation;
@@ -32,11 +33,11 @@
     @keyframes mainpageanimation {
         from {
             visibility: hidden;
-            top: 1vmin;
+            top: 1vh;
         }
         to {
             visibility: visible;
-            top: 10vmin;
+            top: 9vh;
         }
     }
 .main-page-button{
@@ -48,7 +49,7 @@
     border-radius: 25px;
     position: absolute;
     cursor: pointer;
-    margin-top: 15%;
+    margin-top: min(30vmin,370px);
     text-decoration: none;
     animation-name: mainpagebuttonanimation;
     animation-duration: 1s;

@@ -207,7 +207,6 @@ function updatePage() {
     if (totalPrice === 0) {
         yourTotal.style.display = 'none';
         emptyCart.style.display = 'block';
-        yourTotal.style.display = 'none';
         mayWeRecommend.innerText = 'May We Recommend?';
     }
     else {
@@ -331,42 +330,7 @@ function checkQuantity() {
     quantityNumber10.innerText = (macbook1Quantity);
     quantityNumber11.innerText = (macbook2Quantity);
     quantityNumber12.innerText = (macbook3Quantity);
-    if (iphone1Quantity <= 0){
-        removeIphone1();
-    }
-    if (iphone2Quantity <= 0){
-        removeIphone2();
-    }
-    if (iphone3Quantity <= 0){
-        removeIphone3();
-    }
-    if (ipad1Quantity <= 0){
-        removeIpad1();
-    }
-    if (ipad2Quantity <= 0){
-        removeIpad2();
-    }
-    if (ipad3Quantity <= 0){
-        removeIpad3();
-    }
-    if (airpods1Quantity <= 0){
-        removeAirpods1();
-    }
-    if (airpods2Quantity <= 0){
-        removeAirpods2();
-    }
-    if (airpods3Quantity <= 0){
-        removeAirpods3();
-    }
-    if (macbook1Quantity <= 0){
-        removeMacbook1();
-    }
-    if (macbook2Quantity <= 0){
-        removeMacbook2();
-    }
-    if (macbook3Quantity <= 0){
-        removeMacbook3();
-    }
+    updatePage();
 }
 
 // updates number of present recommendations
@@ -425,7 +389,7 @@ if (iphone1InCart === 'true') {
     }
     totalPrice = totalPrice + 399;
     priceCheck();
-    updatePage()
+    updatePage();
 }
 if (iphone2InCart === 'true') {
     iphone2Quantity = iphone2Quantity + 1;
@@ -600,99 +564,171 @@ submitCardInformation.addEventListener('click',function() {
 // if any plus or minus is clicked, the quantity of the relevant cart item is updated 
 plus1.addEventListener('click',function() {
     iphone1Quantity = iphone1Quantity + 1;
+    totalPrice = totalPrice + 399;
     checkQuantity();
 })
 plus2.addEventListener('click',function() {
     iphone2Quantity = iphone2Quantity + 1;
+    totalPrice = totalPrice + 399;
     checkQuantity();
 })
 plus3.addEventListener('click',function() {
     iphone3Quantity = iphone3Quantity + 1;
+    totalPrice = totalPrice + 399;
     checkQuantity();
 })
 plus4.addEventListener('click',function() {
     ipad1Quantity = ipad1Quantity + 1;
+    totalPrice = totalPrice + 399;
     checkQuantity();
 })
 plus5.addEventListener('click',function() {
     ipad2Quantity = ipad2Quantity + 1;
+    totalPrice = totalPrice + 399;
     checkQuantity();
 })
 plus6.addEventListener('click',function() {
     ipad3Quantity = ipad3Quantity + 1;
+    totalPrice = totalPrice + 399;
     checkQuantity();
 })
 plus7.addEventListener('click',function() {
     airpods1Quantity = airpods1Quantity + 1;
+    totalPrice = totalPrice + 199;
     checkQuantity();
 })
 plus8.addEventListener('click',function() {
     airpods2Quantity = airpods2Quantity + 1;
+    totalPrice = totalPrice + 199;
     checkQuantity();
 })
 plus9.addEventListener('click',function() {
     airpods3Quantity = airpods3Quantity + 1;
+    totalPrice = totalPrice + 199;
     checkQuantity();
 })
 plus10.addEventListener('click',function() {
     macbook1Quantity = macbook1Quantity + 1;
+    totalPrice = totalPrice + 899;
     checkQuantity();
 })
 plus11.addEventListener('click',function() {
     macbook2Quantity = macbook2Quantity + 1;
+    totalPrice = totalPrice + 899;
     checkQuantity();
 })
 plus12.addEventListener('click',function() {
     macbook3Quantity = macbook3Quantity + 1;
+    totalPrice = totalPrice + 899;
     checkQuantity();
 })
 
 minus1.addEventListener('click',function() {
     iphone1Quantity = iphone1Quantity - 1;
+    totalPrice = totalPrice - 399;
+    if (iphone1Quantity <= 0){
+        totalPrice = totalPrice + 399;
+        removeIphone1();
+    }
     checkQuantity();
 })
 minus2.addEventListener('click',function() {
     iphone2Quantity = iphone2Quantity - 1;
+    totalPrice = totalPrice - 399;
+    if (iphone2Quantity <= 0){
+        totalPrice = totalPrice + 399;
+        removeIphone2();
+    }
     checkQuantity();
 })
 minus3.addEventListener('click',function() {
     iphone3Quantity = iphone3Quantity - 1;
+    totalPrice = totalPrice - 399;
+    if (iphone3Quantity <= 0){
+        totalPrice = totalPrice + 399;
+        removeIphone3();
+    }
     checkQuantity();
 })
 minus4.addEventListener('click',function() {
     ipad1Quantity = ipad1Quantity - 1;
+    totalPrice = totalPrice - 399;
+    if (ipad1Quantity <= 0){
+        totalPrice = totalPrice + 399;
+        removeIpad1();
+    }
     checkQuantity();
 })
 minus5.addEventListener('click',function() {
     ipad2Quantity = ipad2Quantity - 1;
+    totalPrice = totalPrice - 399;
+    if (ipad2Quantity <= 0){
+        totalPrice = totalPrice + 399;
+        removeIpad2();
+    }
     checkQuantity();
 })
 minus6.addEventListener('click',function() {
     ipad3Quantity = ipad3Quantity - 1;
+    totalPrice = totalPrice - 399;
+    if (ipad3Quantity <= 0){
+        totalPrice = totalPrice + 399;
+        removeIpad3();
+    }
     checkQuantity();
 })
 minus7.addEventListener('click',function() {
     airpods1Quantity = airpods1Quantity - 1;
+    totalPrice = totalPrice - 199;
+    if (airpods1Quantity <= 0){
+        totalPrice = totalPrice + 199;
+        removeAirpods1();
+    }
     checkQuantity();
 })
 minus8.addEventListener('click',function() {
     airpods2Quantity = airpods2Quantity - 1;
+    totalPrice = totalPrice - 199;
+    if (airpods2Quantity <= 0){
+        totalPrice = totalPrice + 199;
+        removeAirpods2();
+    }
     checkQuantity();
 })
 minus9.addEventListener('click',function() {
     airpods3Quantity = airpods3Quantity - 1;
+    totalPrice = totalPrice - 199;
+    if (airpods3Quantity <= 0){
+        totalPrice = totalPrice + 199;
+        removeAirpods3();
+    }
     checkQuantity();
 })
 minus10.addEventListener('click',function() {
     macbook1Quantity = macbook1Quantity - 1;
+    totalPrice = totalPrice - 899;
+    if (macbook1Quantity <= 0){
+        totalPrice = totalPrice + 899;
+        removeMacbook1();
+    }
     checkQuantity();
 })
 minus11.addEventListener('click',function() {
     macbook2Quantity = macbook2Quantity - 1;
+    totalPrice = totalPrice - 899;
+    if (macbook2Quantity <= 0){
+        totalPrice = totalPrice + 899;
+        removeMacbook2();
+    }
     checkQuantity();
 })
 minus12.addEventListener('click',function() {
     macbook3Quantity = macbook3Quantity - 1;
+    totalPrice = totalPrice - 899;
+    if (macbook3Quantity <= 0){
+        totalPrice = totalPrice + 899;
+        removeMacbook3();
+    }
     checkQuantity();
 })
 

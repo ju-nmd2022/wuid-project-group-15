@@ -20,7 +20,7 @@
     box-shadow: 5px 5px 25px 0px #00000080;
     box-shadow: -5px -5px 25px 0px #FFFFFF;
     contain: content;
-    border-radius: 25px;
+    border-radius: 25px; 
     margin: 25px;
     z-index: 0;
 }

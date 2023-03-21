@@ -410,18 +410,30 @@ macbookFilterCheck();
 filterOptionRestrictor1.addEventListener('mouseover', function () {
     filterOptionRestrictor1.style.overflow = 'visible';
     filterOptionRestrictor1.style.boxShadow = 'none';
+    if (window.innerWidth < 1043) {
+        filterOptionRestrictor3.style.visibility = 'hidden';
+    }
 })
 filterOptionRestrictor1.addEventListener('mouseout', function () {
     filterOptionRestrictor1.style.overflow = 'hidden';
+    if (window.innerWidth < 1043) {
+        filterOptionRestrictor3.style.visibility = 'visible';
+    }
 })
 
 // Type
 filterOptionRestrictor2.addEventListener('mouseover', function () {
     filterOptionRestrictor2.style.overflow = 'visible';
     filterOptionRestrictor2.style.boxShadow = 'none';
+    if (window.innerWidth < 1440) {
+        filterOptionRestrictor4.style.visibility = 'hidden';
+    }
 })
 filterOptionRestrictor2.addEventListener('mouseout', function () {
     filterOptionRestrictor2.style.overflow = 'hidden';
+    if (window.innerWidth < 1440) {
+        filterOptionRestrictor4.style.visibility = 'visible';
+    }
 })
 
 // Color

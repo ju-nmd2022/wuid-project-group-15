@@ -133,7 +133,7 @@
     align-content: center;
 }
 .applepay {
-    background-color: #000000;
+    background-color: #101010;
 }
 .applepaylogo {
     width: 40px;
@@ -143,8 +143,19 @@
     background-color: #2e8133;
     text-decoration: none;
 }
-.paywithcard:visited {
+.paywithcardtext,.paywithcardtext:visited,.paywithcard:active,.paywithcard::after {
     color: #FFFFFF;
+}
+.paywithcardtext {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.paywithcardtext {
+    font-size: 15pt;
+    font-weight: bold;
 }
 
 /* ------------------------------------------------ */
@@ -380,71 +391,4 @@
     padding-right: 5px; 
     padding-left: 5px;
 }
-}
-
-/* implementing burger menu on account of smaller screen size */
-@media screen and (max-width: 900px) {
-    .toptext1,.toptext2,.toptext3,.toptext4 {
-        display: none;
-    }
-
-    /* new flex orders for topbar items */
-    .burgermenu {
-        order: 1;
-    }
-    .peellogo {
-        order: 2;
-    }
-    .searchicon {
-        order: 3;
-    }
-    .carticon {
-        order: 4;
-    }
-
-    .burgermenu {
-        display: block;
-        margin-top: 1vh;
-        max-width: 100%;
-        width: max(3vh,35px);
-    }
-         #burgercheck {
-            visibility: hidden;
-        }
-        #burgercheck:checked ~ .burgerlist {
-            visibility: visible;
-        } 
-        .burgerlist {
-            color: white;
-            background-color: #000000;
-            width: 50vw;
-            height: 80vh;
-            text-align: right;
-            position: absolute;
-            right: 0;
-            top: 70px;
-            list-style: none;
-            font-family: 'andalemono', Arial, Helvetica, sans-serif;
-            text-align: right;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(30,3vh);
-            z-index: 1;
-            padding: 0%;
-            margin: 0%;
-        }
-        #burgersiteone,#burgersitetwo,#burgersitethree {
-            font-size: max(3vh,20px);
-            grid-column: 1/span 3;
-            padding-right: 5vw;
-        }
-        #burgersiteone {
-            grid-row: 2;
-        }
-        #burgersitetwo {
-            grid-row: 6;
-        }
-        #burgersitethree {
-            grid-row: 10;
-        } 
 }
