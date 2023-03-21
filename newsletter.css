@@ -1,0 +1,112 @@
+.newsletter-form {
+    background: white;
+
+/* hidden */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+
+/* Places the box in the middle on top of everything */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+
+/* size, alignment, padding */
+    width: 40%;
+    height: 35%;
+    padding: 40px 20px;
+    text-align: center;
+
+    box-shadow: 5px 5px 25px 0px #00000080;
+    box-shadow: -5px -5px 25px 0px #FFFFFF;
+    border-radius: 25px;
+}
+
+.newsletter-form.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* text in the newsletter */
+.newsletter-form p{
+    margin: 5% auto;
+    font-size: 21px;
+    font-weight: 100;
+    max-width: 80%;
+}
+
+.form label{
+    font-size: small;
+    font-weight: 100;
+}
+
+
+.form input {
+    margin: 5px 0px;
+    border-radius: 5px;
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+
+.subscribe-button button {
+    border-radius: 5px;
+    width: 60%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+    border: 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.subscribe-button button:hover {
+    background-color:rgb(90, 90, 90);
+}
+
+.form .close-button {
+    margin: 15px;
+    border-radius: 5px;
+    width: 20%;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color:black;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.form .close-button:hover {
+    background-color:black;
+    color: #FFFFFF;
+
+}
+
+.overlay{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+ 
+    /* hidden */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.overlay.show{
+    visibility: visible;
+    opacity: 1;
+}
+
